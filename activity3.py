@@ -30,3 +30,24 @@ class LinkedList:
         self.head = new_node
 
     #continue here    
+    # Utility function to print the linked LinkedList
+    def printList(self):
+        temp = self.head
+        while (temp):
+            print(temp.data)
+            temp = temp.next
+
+
+# Driver program to test above functions
+llist = LinkedList()
+llist.push(20)
+llist.push(4)
+llist.push(15)
+llist.push(85)
+llist.push(111)
+
+print("Given Linked List")
+llist.printList()
+llist.reverse()
+print("\nReversed Linked List")
+llist.printList()
